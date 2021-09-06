@@ -1,0 +1,123 @@
+@import "../../golobalStyleScss/index.scss";
+
+.dropdown {
+    &:last-child {
+        background-color: $warning;
+        .navLink {
+            color: $white !important; 
+        }
+    }
+    .active{
+        color: $warning !important;
+    }
+
+    .dropdownMenu {
+        width: 350px;
+        z-index: 999;
+        top: 130%;
+        transition: 0.3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        border-radius: 3px;
+        background-color: $warning;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.5s;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    &:hover {
+        .dropdownMenu {
+            top: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+        &::before {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+    }
+}
+.subMenuUnderline {
+    position: relative;
+    transition: 0.3s;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        border-radius: 3px;
+        background-color: $warning;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.5s;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    &:hover {
+        background-color: $warningOp;
+        &::before {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+
+    .dropdown {
+        background-color: $white !important;
+        margin: 8px 10px;
+        border-radius: 30px;
+        overflow: hidden;
+        &:last-child {
+            background-color: $warning !important;
+            border-radius: 0;
+            .navLink {
+                color: $white !important;
+            }
+        }
+        .dropdownMenu {
+            width: 100% !important;
+        }
+        &:hover {
+            border-radius: 8px !important;
+            .dropdownMenu {
+                position: unset !important;
+            }
+        }
+    }
+
+    .collapseMenu {
+        background-color: $info;
+        height: 100%;
+        position: fixed;
+        top: 92px;
+        right: 100%;
+        left: -100%;
+        z-index: 1030;
+        transition: .5s;
+    }
+
+    .hoverDroupdown {
+        right: 0;
+        left: 0;
+    }
+    .fixedBottom {
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+        z-index: 99999;
+    }
+}

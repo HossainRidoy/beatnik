@@ -1,0 +1,34 @@
+@import "../../golobalStyleScss//index.scss";
+
+.technology {
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+.technologyCard {
+    background-color: $secondary;
+    height: 170px;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+    .title {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &:hover {
+        transform: scale(1.2);
+        background-color: $white;
+    }
+}
+
+.active {
+    background-color: $warning !important;
+    color: $white !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .h1 {
+        font-size: 32px;
+    }
+}

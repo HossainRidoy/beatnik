@@ -1,0 +1,70 @@
+
+.clients{
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+
+
+.cardList {
+    .card {
+        position: relative;
+        cursor: pointer;
+        .cardBody {
+            position: absolute;
+            top: 90%;
+            left: 0;
+            z-index: 999;
+            background-color: #fff;
+            border: 1px solid rgba(0,0,0,.3);
+            width: 300px;
+            transition: 0.3s;
+            opacity: 0;
+            border-radius: 5px;
+            visibility: hidden;
+        }
+        &:hover {
+            .cardBody {
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    &:nth-child(6n) {
+        .card {  
+            .cardBody {
+                left: unset;
+                right: 0 !important;
+
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .cardList{
+        &:nth-child(2n) {
+            .card {  
+                .cardBody {
+                    left: unset;
+                    right: 0 !important;
+    
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .cardList{
+        &:nth-child(4n) {
+            .card {  
+                .cardBody {
+                    left: unset;
+                    right: 0 !important;
+    
+                }
+            }
+        }
+    }
+}

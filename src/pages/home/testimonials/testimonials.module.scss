@@ -1,0 +1,17 @@
+@import "../../../golobalStyleScss//index.scss";
+.card{
+    height: 350px;
+    background-color: rgb(221, 224, 226);
+    &:hover{
+        background-color: $warning;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .h2{
+        font-size: 24px;
+        margin-bottom: 20px !important;
+    }
+
+}
+    

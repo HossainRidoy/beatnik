@@ -1,0 +1,12 @@
+@media only screen and (min-width: 992px) {
+    .artical {
+        height: 120px;
+        position: relative;
+        .articalBody {
+            position: absolute;
+            top: -35px;
+            left: 0;
+           right: 0;
+        }
+    }
+}

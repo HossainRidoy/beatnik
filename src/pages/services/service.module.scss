@@ -1,0 +1,35 @@
+.cardImg {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 19px -6px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 991px) {
+    
+    .services{
+        margin-top: 140px;
+        .h1 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .h2{
+            font-size: 24px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .widthVh {
+        height: 100vh;
+    }
+
+}

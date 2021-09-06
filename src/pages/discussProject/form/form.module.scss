@@ -1,0 +1,44 @@
+@import "../../../golobalStyleScss/index.scss";
+.radioInput {
+    opacity: 0;
+}
+.radioLabel {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 14px;
+        border: 1px solid $warning;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -22px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 0px;
+        height: 0px;
+        background-color: #ffc107;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -14px;
+        transition: all 0.5s linear;
+    }
+    // &:checked{
+    //     + ::after {
+    //         width: 14px;
+    //         height: 14px;
+    //         background-color: #ffc107;
+    //         left: -22px;
+    //     }
+    // }
+}
+.radioInput:checked + ::after {
+    width: 14px;
+    height: 14px;
+    background-color: #ffc107;
+    left: -22px;
+}

@@ -1,0 +1,8 @@
+.formControl{
+   border-radius: 10px;
+   border:none;
+   padding: 12px 10px;
+   &:focus{
+    border-color: #ff0000 !important;
+   }
+}

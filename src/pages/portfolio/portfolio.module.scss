@@ -1,0 +1,16 @@
+@import "../././../golobalStyleScss/index.scss";
+
+.portfolio {
+    margin-top: 140px;
+}
+
+.active{
+    background-color: $warning !important;
+    color: $white !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .h1 {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,19 @@
+
+@media only screen and (max-width: 991px) {
+    
+    .topAboutBanner{
+        margin-top: 140px;
+        .h2 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .widthVh {
+        height: 100vh;
+    }
+
+}

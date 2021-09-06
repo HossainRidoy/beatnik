@@ -1,0 +1,35 @@
+// @import '../../golobalStyle/golobalStyle.scss';
+
+.career{
+  margin-top: 140px;
+  margin-bottom: 50px;
+}
+
+
+.modal{
+  background-color: #00000075;
+  
+}
+.dialog{
+  max-width: 70%;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+.dialog{
+  max-width: 100%;
+}
+.title{
+  font-size: 32px;
+}
+.subTitle{
+  font-size: 20px;
+}
+.h1{
+  font-size: 26px;
+}
+.sallay{
+  font-size: 14px;
+}
+}

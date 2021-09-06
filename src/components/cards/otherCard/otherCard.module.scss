@@ -1,0 +1,39 @@
+@import "../../../golobalStyleScss/index.scss";
+.card {
+    cursor: pointer;
+    .rouded30 {
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .borderAnimate {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 25%;
+            height: 2px;
+            background-color: $info;
+            bottom: -10px;
+            left: 0;
+            transition: 0.5s;
+        }
+    }
+    .imgZoom {
+        transition: 0.5s;
+    }
+
+    &:hover {
+        .borderAnimate {
+            &::before {
+                width: 50%;
+                background-color: $warning;
+            }
+        }
+        .imgZoom {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+}
